@@ -1,0 +1,139 @@
+/* Importa a fonte Poppins do Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+ --primary-color: #c6c3c3;
+    --second-color: #252121;
+    --black-color: #000000;
+}
+
+body{
+    background-image: url("img.jp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+a{
+    text-decoration: underline;
+}
+
+.container{
+    width: 450px;
+    margin: 0 auto;
+    margin-top: 50px;
+    backdrop-filter: blur(25px);
+    border: 2px solid var(--primary-color);
+    border-radius: 15px;
+    padding: 7.5em 2.5em 4em 2.5em;
+    color: var(--second-color);
+    box-shadow: 0 0 10px 2px rgba(0,0,0,0.3);
+    position: relative;
+}
+
+/* CABEÇALHO DO CADASTRO */
+.container h2{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--primary-color);
+    width: 160px;
+    height: 70px;
+    border-radius: 0 0 20px 20px;
+    color: var(--black-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+}
+
+.container h2::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -30px;
+    width: 30px;
+    height: 30px;
+    border-top-right-radius: 50%;
+    background: transparent;
+    box-shadow: 15px 0 0 0 var(--primary-color);
+}
+
+.container h2::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -30px;
+    width: 30px;
+    height: 30px;
+    border-top-left-radius: 50%;
+    background: transparent;
+    box-shadow: -15px 0 0 0 var(--primary-color);
+}
+
+/* inputs estilo login */
+.input-box{
+    position: relative;
+    margin: 30px 0;
+}
+
+.input-box input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid var(--primary-color);
+    color: var(--second-color);
+    font-size: 16px;
+    padding-left: 30px;
+}
+
+.input-box i{
+    position: absolute;
+    left: 0;
+    top: 14px;
+    font-size: 20px;
+    color: var(--primary-color);
+}
+
+/* Olhinho da senha */
+#mostrarSenha,
+#mostrarConfirmaSenha{
+    position: absolute;
+    right: 0;
+    top: 14px;
+    font-size: 20px;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+/* BOTÃO */
+.input-submit{
+    display: block;
+    width: 100%;
+    background-color: var(--primary-color);
+    color: var(--black-color);
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.input-submit:hover{
+    background-color: #ffffff;
+}

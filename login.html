@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+
+    <!-- Ícones -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>  
+</head>
+<body>
+    
+    <!-- Formulário  -->
+    <form id="formLogin">
+
+        <div class="wrapper">
+
+            <div class="login-box">
+
+                <div class="login-header">
+                    <span>Login</span>
+                </div>
+
+                <!-- Usuário -->
+                <div class="input_box">
+                    <input type="text" id="user" class="input-field" required>
+                    <label for="user" class="label">Usuário/E-mail</label>
+                    <i class="bx bxs-user"></i>
+                </div>
+
+                <!-- Senha -->
+                <div class="input_box">
+                    <input type="password" id="password" class="input-field" required>
+                    <label for="password" class="label">Senha</label>
+                    <i class="bx bxs-lock-alt"></i>
+
+                    <!-- Mostrar senha -->
+                    <i class="bx bx-show" id="togglePassword"
+                       style="cursor: pointer; position:absolute; right:10px; top:50%; transform:translateY(-50%);">
+                    </i>
+                </div>
+
+                <!-- Lembrar senha -->
+                <div class="renennber-forgot">
+                    <input type="checkbox" id="renennber">
+                    <label for="renennber">Lembrar minha senha</label>
+                </div>
+
+                <!-- Recuperar senha -->
+                <div class="forgot">
+                    <a href="esquici.html">Esqueci minha senha</a>
+                </div>
+
+                <!-- Botão de login -->
+                <button type="submit" id="btnLogin" class="input-submit">Login</button>
+
+                <!-- Cadastro -->
+                <div class="register">
+                    <p>Não tem uma conta? <a href="cadastro.html">Cadastre-se</a></p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </form>
+
+    <script src="login.js"></script>
+
+</body>
+</html>
+
+
+
+
+<script src="login.js"></script>

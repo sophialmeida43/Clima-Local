@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar Senha</title>
+    <link rel="stylesheet" href="esqueci.css">
+    <script src="https://kit.fontawesome.com/a2d9d5a32f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Container principal que centraliza todo o conteúdo -->
+    <div class="wrapper">
+        <div class="esqueci-box">
+            <div class="esqueci-header">
+                <span>Recuperar Senha</span>
+            </div>
+
+            <!-- Campo de entrada do e-mail -->
+            <div class="input_box">
+                <!-- Ícone do e-mail -->
+                <i class="fas fa-envelope"></i>
+
+                <!-- Input onde o usuário digita o e-mail cadastrado -->
+                <input type="email" id="emailRecuperar" class="input-field" required>
+
+                <!-- Label flutuante para o campo do e-mail -->
+                <label for="emailRecuperar" class="label">E-mail cadastrado</label>
+            </div>
+            
+            <button id="btnRecuperar" class="input-submit">Recuperar</button>
+
+            <!-- Mensagem exibida após clicar no botão (sucesso ou erro) -->
+            <p id="msg"></p>
+
+            <!-- Link para voltar ao login -->
+            <div class="voltar">
+                <a href="login.html">Voltar para o Login</a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="esqueci.js"></script>
+
+</body>
+</html>

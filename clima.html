@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima</title>
+    <link rel="stylesheet" href="clima.css">
+
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Contêiner principal onde todo o conteúdo ficará centralizado -->
+    <div id="container">
+
+        <!-- Formulário de busca da cidade -->
+        <form action="search" id="search">
+            <!-- Ícone de localização -->
+            <i class="fa-solid fa-location-dot"></i>
+
+            <!-- Campo para digitar o nome da cidade -->
+            <input type="search" name="city_name" id="city_name" placeholder="Buscar cidade">
+
+            <!-- Botão de enviar a busca -->
+            <button type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </form>
+
+        <!-- Área principal com as informações do clima -->
+        <div id="weather">
+
+            <!-- Título que exibe o nome da cidade -->
+            <h1 id="title">Estado, BR</h1>
+
+            <!-- Bloco da temperatura atual -->
+            <div id="temp">
+
+                <!-- Ícone do clima (sol, nuvens, chuva, etc.) -->
+                <img id="temp_img" src="http://openweathermap.org/img/wn/04d@2x.png" alt="">
+
+                <!-- Valores e descrição da temperatura -->
+                <div>
+                    <p id="temp_value"> 
+                        32 <sup>º</sup>
+                    </p>
+
+                    <!-- Descrição (ex: ensolarado, nublado) -->
+                    <p id="temp_description">
+                        Ensolarado
+                    </p>
+                </div>    
+            </div>
+
+            <!-- Outras informações meteorológicas -->
+            <div id="other_infos">
+
+                <!-- Temperatura máxima -->
+                <div class="infos">
+                    <i id="temp_max_icon" class="fa-solid fa-temperature-high"></i>
+                    <div>
+                        <h2>Temp. Máx</h2>
+                        <p id="temp_max">32 <sup>Cº</sup></p>
+                    </div>
+                </div>
+
+                <!-- Temperatura mínima -->
+                <div class="infos">
+                    <i id="temp_min_icon" class="fa-solid fa-temperature-low"></i>
+                    <div>
+                        <h2>Temp. Mín</h2>
+                        <p id="temp_min">12 <sup>Cº</sup></p>
+                    </div>
+                </div>
+
+                <!-- Umidade -->
+                <div class="infos">
+                    <i id="humidity_icon" class="fa-solid fa-droplet"></i>
+                    <div>
+                        <h2>Umidade</h2>
+                        <p id="humidity">50%</p>
+                    </div>
+                </div>
+
+                <!-- Velocidade do vento -->
+                <div class="infos">
+                    <i id="wind_icon" class="fa-solid fa-wind"></i>
+                    <div>
+                        <h2>Vento</h2>
+                        <p id="wind">50 km/h</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Área para mostrar alertas (cidade não encontrada, erro, etc.) -->
+        <div id="alert"></div>
+    </div>
+
+    <!-- Exibe a data e hora em tempo real -->
+   <div id="hora_brasilia"></div>
+<div id="dia_semana"></div>
+<p id="fuso_horario"></p>
+
+
+
+    <script src="clima.js"></script>
+
+</body>
+</html>
