@@ -31,7 +31,7 @@ Trabalhar conceitos fundamentais de consumo de APIs, manipulação do DOM e dese
 
 Abaixo estão o vídeo demonstrativo e as capturas de tela que explicam o funcionamento do site.
 
- 🎥[Vídeo de Demonstração do Projeto](video-explicação.webm)
+ 🎥[Vídeo de Demonstração do Projeto](video-explicação.mp4)
 
 🖼️ [Tela Inicial](tela-inicial.png)
 
